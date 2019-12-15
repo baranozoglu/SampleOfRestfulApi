@@ -3,7 +3,7 @@
 
 Created a RESTful API with a single endpoint that fetches the data in the
 provided MongoDB collection and return the results in the requested format.
-Our endpoint url is `<link>` : <https://exampleofrestfulapi.herokuapp.com/getir> .
+Our endpoint url is https://exampleofrestfulapi.herokuapp.com/getir .
 You should post request json data like a sample of request payload.
 
 
