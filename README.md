@@ -1,24 +1,29 @@
 #Restful API Example
--------------
-    To create a RESTful API with a single endpoint that fetches the data in the
-provided MongoDB collection and return the results in the requested format.
-● The code was written in Node.js using express framework
-● The endpoint just handle HTTP POST requests.
-● The application was deployed on AWS or Heroku.
-● Clean and Production Ready Code
-● Our main file is server.js
+=============
 
-Indented 20 spaces, like `<pre>` (Preformatted Text).
-Sample of Request Payload
+To create a RESTful API with a single endpoint that fetches the data in the
+provided MongoDB collection and return the results in the requested format.
+
+#### Fundamentals of our project
+
+- The code was written in Node.js using express framework
+- The endpoint just handle HTTP POST requests.
+- The application was deployed on AWS or Heroku.
+- Clean and Production Ready Code
+- Our main file is server.js
+
+#### Sample of Request Payload 
+```javascript
 {
     "startDate": "2016-01-26",
     "endDate": "2018-02-02",
     "minCount": 2700,
     "maxCount": 3000
 }
+```
 
-Indented 20 spaces, like `<pre>` (Preformatted Text).
-Sample of Response Payload
+#### Sample of Response Payload 
+```javascript
 {
     "code":0,
     "msg":"Success",
@@ -35,4 +40,5 @@ Sample of Response Payload
         }
     ]
 }
+```
 
