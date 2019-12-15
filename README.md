@@ -1,4 +1,4 @@
-<h1>Restful API Example</h1>
+Restful API Example
     To create a RESTful API with a single endpoint that fetches the data in the
 provided MongoDB collection and return the results in the requested format.
 ● The code was written in Node.js using express framework

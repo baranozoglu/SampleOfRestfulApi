@@ -27,9 +27,9 @@ app.post('/getir',urlEncodedParser,function(request,response,next){
         maxCount: JSON.stringify(request.body.maxCount)
     });
     //mongoDB connection
-    var db = mongoose.connect('mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study',
+    mongoose.connect('mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study',
     {useUnifiedTopology: true, useNewUrlParser: true},function(error){ 
-       response.end("Something went wrong");
+       response.end("Something went wrong about connection. Error:" + error.message);
     });
 
     Record.aggregate([
@@ -45,7 +45,6 @@ app.post('/getir',urlEncodedParser,function(request,response,next){
         {$match : {'_id.totalCount':{ $gt:request1.minCount,$lt:request1.maxCount},'_id.createdAt': { $gt:request1.startDate , $lt:request1.endDate}}},
         {$sort : {'_id.createdAt':1,'_id.totalCount': -1}}
     ], function (err, result) {        
-        response.setHeader('Content-Type', 'application/json');
         response.json({
             'status': 0,
             'message': "Response successfully",
