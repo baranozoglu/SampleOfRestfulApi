@@ -1,16 +1,19 @@
 #Restful API Example
 =============
 
-To create a RESTful API with a single endpoint that fetches the data in the
+Created a RESTful API with a single endpoint that fetches the data in the
 provided MongoDB collection and return the results in the requested format.
+Our endpoint url is `<link>` : <https://exampleofrestfulapi.herokuapp.com/getir> .
+You should post request json data like a sample of request payload.
+
 
 #### Fundamentals of our project
 
 - The code was written in Node.js using express framework
 - The endpoint just handle HTTP POST requests.
-- The application was deployed on AWS or Heroku.
+- The application was deployed on Heroku.
 - Clean and Production Ready Code
-- Our main file is server.js
+- Our main file is index.js
 
 #### Sample of Request Payload 
 ```javascript
